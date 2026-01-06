@@ -59,7 +59,7 @@ export default function Page() {
       {/* --- Featured Projects --- */}
       <section className="mb-24 space-y-8">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-800">
+          <h2 className="text-2xl font-semibold tracking-tight text-neutral-400">
             Selected Work
           </h2>
           {/* <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">

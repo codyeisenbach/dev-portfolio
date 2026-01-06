@@ -31,14 +31,14 @@ const projects: Project[] = [
 
 export function FeaturedProjects() {
   return (
-    <div className="grid gap-6 md:grid-cols-3">
+    <div className="grid gap-6 lg:grid-cols-3">
       {projects.map((project) => (
         <Link
           key={project.title}
           href={project.href}
           className="group flex flex-col overflow-hidden rounded-lg border border-neutral-100 bg-white transition-all hover:border-neutral-200 hover:bg-neutral-50 hover:shadow-sm"
         >
-          <div className="relative h-48 w-full overflow-hidden bg-neutral-100">
+          <div className="relative h-72 w-full overflow-hidden bg-neutral-100">
             <Image
               src={project.imageSrc}
               alt={project.imageAlt}
