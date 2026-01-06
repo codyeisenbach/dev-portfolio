@@ -10,7 +10,7 @@ export default function Page() {
         <div className="order-2 w-full sm:order-1 justify-between">
           <div className="flex justify-between flex-col">
             <div className="flex w-full justify-between">
-              <p className="sm:text-lg mb-8 mt-2 text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
+              <p className="sm:text-lg mb-8 mt-2 text-xs font-bold uppercase tracking-[0.25em] text-neutral-400">
                 Software Developer
               </p>
               <h2 className="text-xs sm:text-lg font-bold tracking-tight text-neutral-600 whitespace-nowrap mt-2 ml-2 lg:mr-4 mr-0">
@@ -18,7 +18,7 @@ export default function Page() {
               </h2>
             </div>
             <div className="flex justify-between w-full">
-              <div className="flex flex-col gap-y-2 mb-8 w-[220px] md:w-full">
+              <div className="flex flex-col gap-y-2 mb-8 md:w-full">
                 <h1 className="text-4xl font-bold tracking-tight text-neutral-400 sm:text-5xl">
                   Building reliable systems <br className="hidden sm:block" />
                   with Next.js & TypeScript.
