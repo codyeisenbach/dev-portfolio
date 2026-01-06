@@ -12,31 +12,20 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Production Systems",
+    title: "Text Waves",
     description:
-      "Maintaining complex production systems with thousands of business rules and tens of thousands of product variants.",
-    href: "/projects/production-systems",
-    tech: ["TypeScript", "System Design", "Node.js"],
-    imageSrc: "/projects/production-systems.svg",
-    imageAlt: "Production Systems",
-  },
-  {
-    title: "Headless Storefront",
-    description:
-      "Migrating a large-scale production storefront from the BigCommerce Stencil Framework to a modern, Next.js based, headless architecture.",
-    href: "/projects/headless-storefront",
-    tech: ["Next.js", "BigCommerce", "React"],
-    imageSrc: "/projects/headless-storefront.svg",
-    imageAlt: "Headless Storefront",
-  },
-  {
-    title: "Interactive 3D",
-    description:
-      "Creating interactive 3D experiences with a strong focus on performance and scalability.",
-    href: "/projects/interactive-3d",
-    tech: ["WebGL", "Three.js", "Shaders"],
-    imageSrc: "/projects/interactive-3d.svg",
-    imageAlt: "Interactive 3D",
+      "A real-time generative typography experiment built on the HTML Canvas. Text is decomposed into a grid of cells and animated using concentric wave propagation, fixed-timestep updates, and distance-based intensity falloff to produce deterministic, high-performance visual motion.",
+    href: "/text-waves",
+    tech: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "HTML Canvas",
+      "requestAnimationFrame",
+      "Math & Geometry",
+    ],
+    imageSrc: "/text-waves-thumbnail.png",
+    imageAlt: "Text Waves generative typography animation",
   },
 ];
 
