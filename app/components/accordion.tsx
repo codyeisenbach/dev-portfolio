@@ -31,16 +31,16 @@ export function Accordion({
         onClick={() => setIsOpen(!isOpen)}
         className="group flex w-full items-center justify-between py-2 text-left"
       >
-        <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-zinc-500 transition-colors group-hover:text-zinc-900">
+        <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-zinc-500 transition-colors group-hover:text-zinc-900 dark:text-zinc-400 dark:group-hover:text-zinc-100">
           {mainHeading}
         </h2>
-        <span className="text-xs font-medium uppercase tracking-wider text-zinc-400 transition-colors group-hover:text-zinc-600">
+        <span className="text-xs font-medium uppercase tracking-wider text-zinc-400 transition-colors group-hover:text-zinc-600 dark:text-zinc-500 dark:group-hover:text-zinc-300">
           {isOpen ? "Show Less" : "Show More"}
         </span>
       </button>
 
       <ul
-        className={`mt-6 space-y-6 text-zinc-600 ${
+        className={`mt-6 space-y-6 text-zinc-600 dark:text-zinc-300 ${
           style === "bullet-point" ? "list-disc pl-5" : ""
         }`}
       >
@@ -49,14 +49,16 @@ export function Accordion({
             key={index}
             className={`flex flex-col gap-1 ${
               style === "bordered"
-                ? "rounded-lg border border-zinc-200 bg-zinc-50/50 p-6"
+                ? "rounded-lg border border-zinc-200 bg-zinc-50/50 p-6 dark:border-zinc-800 dark:bg-zinc-900/50"
                 : ""
             }`}
           >
-            <span className="font-semibold text-zinc-900">
+            <span className="font-semibold text-zinc-900 dark:text-zinc-50">
               {item.subHeading}
             </span>
-            <span className="leading-relaxed text-zinc-600">{item.copy}</span>
+            <span className="leading-relaxed text-zinc-600 dark:text-zinc-400">
+              {item.copy}
+            </span>
           </li>
         ))}
       </ul>

@@ -12,11 +12,11 @@ export default function Page() {
             <div className="flex justify-between w-full">
               <div className="flex flex-col gap-y-2 mb-8">
                 <div className="flex w-full justify-start ">
-                  <p className="sm:text-lg mb-8 mt-2 text-xs self-start font-bold uppercase tracking-[0.25em] text-neutral-500">
+                  <p className="sm:text-lg mb-8 mt-2 text-xs self-start font-bold uppercase tracking-[0.25em] text-neutral-300">
                     Software Developer
                   </p>
                 </div>
-                <h1 className="text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl">
+                <h1 className="text-4xl font-bold tracking-tight text-neutral-400 sm:text-5xl">
                   Building reliable systems <br className="hidden sm:block" />
                   with Next.js & TypeScript.
                 </h1>
