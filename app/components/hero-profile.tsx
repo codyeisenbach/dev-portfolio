@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 export function HeroProfile() {
+  // todo add image
+
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-center">
       <h2 className="text-md sm:text-2xl font-bold tracking-tight text-neutral-900 whitespace-nowrap">
