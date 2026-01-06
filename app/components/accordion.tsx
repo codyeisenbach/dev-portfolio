@@ -20,7 +20,7 @@ export function Accordion({
   items,
   style = "default",
 }: AccordionProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   // Default state: closed, showing mainHeading and the first item below it.
   const visibleItems = isOpen ? items : items.slice(0, 1);
