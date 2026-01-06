@@ -14,15 +14,15 @@ const projects: Project[] = [
   {
     title: "Text Waves",
     description:
-      "A real-time generative typography experiment built on the HTML Canvas. Text is decomposed into a grid of cells and animated using concentric wave propagation, fixed-timestep updates, and distance-based intensity falloff to produce deterministic, high-performance visual motion.",
+      "A real-time generative typography system that animates grid-based text using concentric waves and distance-based falloff using HTML Canvas.",
     href: "/text-waves",
     tech: [
       "TypeScript",
       "React",
       "Next.js",
       "HTML Canvas",
-      "requestAnimationFrame",
       "Math & Geometry",
+      "requestAnimationFrame",
     ],
     imageSrc: "/text-waves-thumbnail.png",
     imageAlt: "Text Waves generative typography animation",
@@ -51,7 +51,7 @@ export function FeaturedProjects() {
               <h3 className="font-semibold text-neutral-900 group-hover:text-black">
                 {project.title}
               </h3>
-              <p className="text-sm leading-relaxed text-neutral-600 line-clamp-3">
+              <p className="text-sm leading-relaxed text-neutral-600 line-clamp-7">
                 {project.description}
               </p>
             </div>
