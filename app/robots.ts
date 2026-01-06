@@ -1,12 +1,12 @@
-import { baseUrl } from 'app/sitemap'
-
 export default function robots() {
+  const baseUrl = "https://www.codyeisenbach.com";
+
   return {
     rules: [
       {
-        userAgent: '*',
+        userAgent: "*",
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-  }
+  };
 }
