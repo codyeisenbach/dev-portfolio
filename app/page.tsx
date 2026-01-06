@@ -13,7 +13,7 @@ export default function Page() {
               <p className="sm:text-lg mb-8 mt-2 text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
                 Software Developer
               </p>
-              <h2 className="text-md sm:text-2xl font-bold tracking-tight text-neutral-900 whitespace-nowrap mt-1 mx-4">
+              <h2 className="text-xs sm:text-lg font-bold tracking-tight text-neutral-600 whitespace-nowrap mt-2 ml-2 lg:mr-4 mr-0">
                 Cody Eisenbach
               </h2>
             </div>
@@ -23,9 +23,6 @@ export default function Page() {
                   Building reliable systems <br className="hidden sm:block" />
                   with Next.js & TypeScript.
                 </h1>
-              </div>
-              <div className="relative flex mx-8 justify-start items-start">
-                <HeroProfile />
               </div>
             </div>
             <div className="max-w-2xl mt-4 space-y-6 text-lg leading-relaxed text-neutral-500">
