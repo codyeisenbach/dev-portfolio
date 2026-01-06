@@ -4,26 +4,29 @@ import { HeroProfile } from "app/components/hero-profile";
 
 export default function Page() {
   return (
-    <main className="mx-auto px-16 py-8">
+    <main className="mx-auto px-8 md:px-16 py-8">
       {/* --- Hero Section --- */}
       <section className="mb-16 flex flex-col gap-12 sm:items-center">
         <div className="order-2 w-full sm:order-1 justify-between">
           <div className="flex justify-between flex-col">
+            <div className="flex w-full justify-between">
+              <p className="sm:text-lg mb-8 mt-2 text-xs font-bold uppercase tracking-[0.25em] text-neutral-300">
+                Software Developer
+              </p>
+              <h2 className="text-md sm:text-2xl font-bold tracking-tight text-neutral-900 whitespace-nowrap mt-1 mx-4">
+                Cody Eisenbach
+              </h2>
+            </div>
             <div className="flex justify-between w-full">
-              <div className="flex flex-col gap-y-2 mb-8">
-                <div className="flex w-full justify-start ">
-                  <p className="sm:text-lg mb-8 mt-2 text-xs self-start font-bold uppercase tracking-[0.25em] text-neutral-300">
-                    Software Developer
-                  </p>
-                </div>
+              <div className="flex flex-col gap-y-2 mb-8 w-[220px] md:w-full">
                 <h1 className="text-4xl font-bold tracking-tight text-neutral-400 sm:text-5xl">
                   Building reliable systems <br className="hidden sm:block" />
                   with Next.js & TypeScript.
                 </h1>
               </div>
-              {/* <div className="flex items-start ml-8  md:hidden">
+              <div className="relative flex mx-8 justify-start items-start">
                 <HeroProfile />
-              </div> */}
+              </div>
             </div>
             <div className="max-w-2xl mt-4 space-y-6 text-lg leading-relaxed text-neutral-500">
               <p>
