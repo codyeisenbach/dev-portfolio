@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main className="mx-auto px-16 py-8">
       {/* --- Hero Section --- */}
-      <section className="mb-20 flex flex-col gap-12 sm:items-center">
+      <section className="mb-16 flex flex-col gap-12 sm:items-center">
         <div className="order-2 w-full sm:order-1 justify-between">
           <div className="flex justify-between flex-col">
             <div className="flex justify-between w-full">
@@ -16,7 +16,7 @@ export default function Page() {
                     Software Developer
                   </p>
                 </div>
-                <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
+                <h1 className="text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl">
                   Building reliable systems <br className="hidden sm:block" />
                   with Next.js & TypeScript.
                 </h1>
@@ -25,7 +25,7 @@ export default function Page() {
                 <HeroProfile />
               </div> */}
             </div>
-            <div className="max-w-2xl mt-4 space-y-6 text-lg leading-relaxed text-neutral-600">
+            <div className="max-w-2xl mt-4 space-y-6 text-lg leading-relaxed text-neutral-500">
               <p>
                 I’m a software developer based in Austin focused on
                 performance-minded web applications. I work primarily on large,
@@ -41,7 +41,7 @@ export default function Page() {
           </div>
 
           {/* Tech Stack Pills */}
-          <div className="flex mt-4 flex-wrap gap-2 text-sm font-medium text-neutral-600">
+          <div className="flex mt-8 flex-wrap gap-2 text-sm font-medium text-neutral-600">
             {["Next.js", "TypeScript", "React", "Node.js", "Tailwind CSS"].map(
               (tech) => (
                 <span
@@ -59,7 +59,7 @@ export default function Page() {
       {/* --- Featured Projects --- */}
       <section className="mb-24 space-y-8">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
+          <h2 className="text-2xl font-semibold tracking-tight text-neutral-800">
             Selected Work
           </h2>
           {/* <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">
