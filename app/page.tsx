@@ -3,6 +3,47 @@ import { Accordion } from "app/components/accordion";
 import { HeroProfile } from "app/components/hero-profile";
 
 export default function Page() {
+  const skillPills = [
+    // Languages
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "PL/pgSQL",
+    "C#",
+
+    // Frontend Frameworks & Libraries
+    "React",
+    "Next.js",
+    "Vue",
+    "Three.js",
+    "Threekit",
+
+    // Backend & API
+    "Node.js",
+    "Express",
+    "REST",
+    "GraphQL",
+    "Apollo",
+    "Prisma",
+
+    // Databases
+    "Postgres",
+    "MongoDB",
+    "NoSQL",
+
+    // Cloud, Infrastructure & DevOps
+    "Cloudflare",
+    "GCP",
+    "GitHub",
+
+    // CMS & Commerce Platforms
+    "Contentful",
+    "BigCommerce",
+    "Shopify",
+
+    // Domain Expertise
+    "Technical SEO",
+  ];
   return (
     <main className="mx-auto px-8 md:px-16 py-8">
       {/* --- Hero Section --- */}
@@ -20,8 +61,7 @@ export default function Page() {
             <div className="flex justify-between w-full">
               <div className="flex flex-col gap-y-2 mb-8 md:w-full">
                 <h1 className="text-4xl font-bold tracking-tight text-neutral-400 sm:text-5xl">
-                  Building reliable systems <br className="hidden sm:block" />
-                  with Next.js & TypeScript.
+                  Building reliable systems
                 </h1>
               </div>
             </div>
@@ -42,16 +82,14 @@ export default function Page() {
 
           {/* Tech Stack Pills */}
           <div className="flex mt-8 flex-wrap gap-2 text-sm font-medium text-neutral-600">
-            {["Next.js", "TypeScript", "React", "Node.js", "Tailwind CSS"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-neutral-100 px-3 py-1 text-neutral-800"
-                >
-                  {tech}
-                </span>
-              )
-            )}
+            {skillPills.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full bg-neutral-100 px-3 py-1 text-neutral-800"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
       </section>
