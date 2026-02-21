@@ -12,6 +12,7 @@ export default function Page() {
     "C#",
 
     // Frontend Frameworks & Libraries
+    "MERN",
     "React",
     "Next.js",
     "Vue",
